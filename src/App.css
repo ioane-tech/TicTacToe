@@ -1,38 +1,99 @@
-.App {
+body{
+  background-color: rgb(19, 19, 19);
+}
+h1{
   text-align: center;
+  font-family: Monospace;
+  color: rgb(252, 199, 100);
+  font-size: 45px;
+}
+.status{
+  font-family: Monospace;
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(252, 199, 100);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.board_div{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  width: 315px;
+  height:315px;
 }
+.board_each_button{
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
+  margin-top: 5px;
+  
+  color: rgb(74, 74, 74);
+  border: 3px solid gray;
+  border-radius: 4px;
+  background-color:rgb(225, 225, 225);
+  cursor: pointer;
+}
+.board_each_button:hover{
+  background-color: white;
+  border-color: rgb(252, 199, 100);
+}
+.restart_button_div{
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.restart_button{
+  width: 120px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+  border: 1px solid rgb(255, 255, 255); 
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.restart_button:hover{
+  background-color: rgb(232, 174, 68);
   color: white;
+  transition: 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.winner_background_div{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
 }
+.winner_status{
+  position: absolute;
+  top: 20%;
+  left: 41%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 55px;
+  color:rgb(82, 255, 47);
+}
+.winner_restart_button{
+  font-size: 25px;
+  position: absolute;
+  top: 40%;
+  left: 44%;
+  width: 180px;
+  height: 40px;
+
+  margin-top: 20px;
+  border: 1px solid rgb(255, 255, 255); 
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.winner_restart_button:hover{
+  background-color: rgb(232, 174, 68);
+  color: white;
+  transition: 0.2s;
 }
